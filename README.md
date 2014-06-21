@@ -2,7 +2,6 @@
 ===============
  
 
-
 ### A Fork of Robocode for python programming
 
 #### This is the new and maintained version developed with PyQt
