@@ -40,7 +40,7 @@ class Battle(QDialog, Ui_Dialog):
                                 self.listBots[str(bot).replace("<class '","").replace("'>", "")] = bot
                                 break
                     except Exception,  e:
-                        print "Problem with bot file '%s': %s" % (botFile, str(e))
+                        print "Problem with robot file '%s': %s" % (botFile, str(e))
                         
         for key in self.listBots.keys():
             self.listWidget.addItem(key)
@@ -48,16 +48,15 @@ class Battle(QDialog, Ui_Dialog):
     @pyqtSignature("")
     def on_pushButton_clicked(self):
         """
-        Add Bot
+        When the button is pressed, add selected robot to the list        
         """
-    
         self.listWidget_2.addItem(self.listWidget.currentItem().text())
  
     
     @pyqtSignature("")
     def on_pushButton_2_clicked(self):
         """
-        Remove Bot
+        When the button is pressed, remove selected robot from the list        
         """
         item = self.listWidget_2.takeItem(self.listWidget_2.currentRow())
         item = None
@@ -65,7 +64,7 @@ class Battle(QDialog, Ui_Dialog):
     @pyqtSignature("")
     def on_pushButton_3_clicked(self):
         """
-        Start
+        Start the game
         """
         width = self.spinBox.value()
         height = self.spinBox_2.value()
@@ -78,9 +77,10 @@ class Battle(QDialog, Ui_Dialog):
         self.save(width, height, botList)
         self.window.setUpBattle(width, height, botList)
 
-        
-        
     def save(self, width, height, botList):
+        """
+        Save the settings
+        """
         dico = {}
         dico["width"] = width
         dico["height"] = height

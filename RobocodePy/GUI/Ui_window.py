@@ -157,7 +157,7 @@ class Ui_MainWindow(object):
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(_translate("MainWindow", "Python Robocode", None))
+        MainWindow.setWindowTitle(_translate("MainWindow", "RobocodePy", None))
         self.tableWidget.setSortingEnabled(True)
         item = self.tableWidget.horizontalHeaderItem(0)
         item.setText(_translate("MainWindow", "Name", None))
@@ -169,8 +169,8 @@ class Ui_MainWindow(object):
         item.setText(_translate("MainWindow", "3rd", None))
         item = self.tableWidget.horizontalHeaderItem(4)
         item.setText(_translate("MainWindow", "Points", None))
-        self.pushButton.setText(_translate("MainWindow", "Start Last Battle", None))
-        self.label_2.setText(_translate("MainWindow", "Battle\'s Number", None))
+        self.pushButton.setText(_translate("MainWindow", "Start last battle", None))
+        self.label_2.setText(_translate("MainWindow", "Number of battles", None))
         self.label.setText(_translate("MainWindow", "Game Speed", None))
         self.menuBattle.setTitle(_translate("MainWindow", "Battle", None))
         self.menuRobot.setTitle(_translate("MainWindow", "Robot", None))
