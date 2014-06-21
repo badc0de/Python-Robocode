@@ -14,7 +14,7 @@ from PyQt4 import QtGui
 if __name__ == "__main__":
 
    app = QtGui.QApplication(sys.argv)
-   app.setApplicationName("Python-Robocode")
+   app.setApplicationName("RobocodePy")
    myapp = MainWindow()
    myapp.show()
    sys.exit(app.exec_())
